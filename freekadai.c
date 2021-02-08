@@ -69,8 +69,8 @@ int main(void){
 
 	while(check){
 		system("clear");
-		printf("selecter your job\n");
-		printf("press 1 to selecter magician(HP = 70,MP = 10,ATK = 40,DEF = 5)\npress 2 to select fighter(HP = 100,MP = 0,ATK = 60,DEF = 10)\n");
+		printf("select your job\n");
+		printf("press 1 to select magician(HP = 70,MP = 10,ATK = 40,DEF = 5)\npress 2 to select fighter(HP = 100,MP = 0,ATK = 60,DEF = 10)\n");
 		scanf("%d",&selecter);
 		switch(selecter){
 			case 1:
@@ -147,7 +147,7 @@ int main(void){
 							you.mp = you.mp - 2;
 							you.hp = you.hp + 10 + (rand() % 10 + 1);
 							slyme();
-							printf("| you healed! your hp = %d|\n",you.hp);
+							printf("|       you healed! your hp = %d            |\n",you.hp);
 							endline();
 						}
 						break;
